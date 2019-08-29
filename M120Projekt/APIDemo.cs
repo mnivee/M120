@@ -11,15 +11,22 @@ namespace M120Projekt
         {
             Debug.Print("--- DemoACreate ---");
             // KlasseA
-            Data.KlasseA klasseA1 = new Data.KlasseA();
-            klasseA1.TextAttribut = "Artikel 1";
-            klasseA1.DatumAttribut = DateTime.Today;
+            Data.Bibliothek klasseA1 = new Data.Bibliothek();
+            klasseA1.Geschlecht = false;
+            klasseA1.Vorname = "Niveditha";
+            klasseA1.Nachname = "Muneeswaran";
+            klasseA1.Strasse = "Tiefenaustrasse";
+            klasseA1.Hausnummer = 84;
+            klasseA1.Postleitzahl = 3004;
+            klasseA1.Ort = "Bern";
+            klasseA1.Buecherliste = "Maze Runner";
+            
             Int64 klasseA1Id = klasseA1.Erstellen();
             Debug.Print("Artikel erstellt mit Id:" + klasseA1Id);
         }
         public static void DemoACreateKurz()
         {
-            Data.KlasseA klasseA2 = new Data.KlasseA { TextAttribut = "Artikel 2", BooleanAttribut = true, DatumAttribut = DateTime.Today };
+            Data.Bibliothek klasseA2 = new Data.Bibliothek { TextAttribut = "Artikel 2", BooleanAttribut = true, DatumAttribut = DateTime.Today };
             Int64 klasseA2Id = klasseA2.Erstellen();
             Debug.Print("Artikel erstellt mit Id:" + klasseA2Id);
         }
@@ -29,7 +36,7 @@ namespace M120Projekt
         {
             Debug.Print("--- DemoARead ---");
             // Demo liest alle
-            foreach (Data.KlasseA klasseA in Data.KlasseA.LesenAlle())
+            foreach (Data.Bibliothek klasseA in Data.Bibliothek.LesenAlle())
             {
                 Debug.Print("Artikel Id:" + klasseA.KlasseAId + " Name:" + klasseA.TextAttribut);
             }
@@ -39,7 +46,7 @@ namespace M120Projekt
         {
             Debug.Print("--- DemoAUpdate ---");
             // KlasseA ändert Attribute
-            Data.KlasseA klasseA1 = Data.KlasseA.LesenID(1);
+            Data.Bibliothek klasseA1 = Data.Bibliothek.LesenID(1);
             klasseA1.TextAttribut = "Artikel 1 nach Update";
             klasseA1.Aktualisieren();
         }
@@ -47,7 +54,7 @@ namespace M120Projekt
         public static void DemoADelete()
         {
             Debug.Print("--- DemoADelete ---");
-            Data.KlasseA.LesenID(2).Loeschen();
+            Data.Bibliothek.LesenID(2).Loeschen();
             Debug.Print("Artikel mit Id 2 gelöscht");
         }
         #endregion
