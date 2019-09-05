@@ -5,8 +5,23 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:M120Projekt"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="Biblioithek" Height="380.283" Width="624.119">
     <Grid>
-        
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="0*"/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <DockPanel Grid.ColumnSpan="2">
+            <Menu DockPanel.Dock="Top" Height="30">
+                <MenuItem Header="Homeseite"></MenuItem>
+                <MenuItem Header="Nutzer erfassen"></MenuItem>
+                <MenuItem Header="Bücher erfassen"></MenuItem>
+                <MenuItem Header="Fällige Abgaben"></MenuItem>
+                <MenuItem Header="Einstellungen"></MenuItem>
+            </Menu>
+            <Button DockPanel.Dock="Left" Content="Einrahmung"/>
+            <Button DockPanel.Dock="Right" Content="Einrahmung"/>
+            <Button Content="Mitte"/>
+        </DockPanel>
     </Grid>
 </Window>
