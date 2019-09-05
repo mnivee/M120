@@ -10,6 +10,8 @@ namespace M120Projekt.Data
     {
         #region Datenbankschicht
         [Key]
+        public Int64 BibliothekID { get; set; }
+        [Required]
         public Boolean Geschlecht { get; set; }
         [Required]
         public String Vorname { get; set; }
@@ -42,39 +44,39 @@ namespace M120Projekt.Data
         {
             using (var db = new Context())
             {
-                return (from record in db.KlasseA select record).ToList();
+                return (from record in db.Bibliothek select record).ToList();
             }
         }
         public static Bibliothek LesenID(Int64 klasseAId)
         {
             using (var db = new Context())
             {
-                return (from record in db.KlasseA where record.KlasseAId == klasseAId select record).FirstOrDefault();
+                return (from record in db.Bibliothek where record.BibliothekID == klasseAId select record).FirstOrDefault();
             }
         }
         public static List<Bibliothek> LesenAttributGleich(String suchbegriff)
         {
             using (var db = new Context())
             {
-                return (from record in db.KlasseA where record.TextAttribut == suchbegriff select record).ToList();
+                return (from record in db.Bibliothek where record.Nachname == suchbegriff select record).ToList();
             }
         }
         public static List<Bibliothek> LesenAttributWie(String suchbegriff)
         {
             using (var db = new Context())
             {
-                return (from record in db.KlasseA where record.TextAttribut.Contains(suchbegriff) select record).ToList();
+                return (from record in db.Bibliothek where record.Nachname.Contains(suchbegriff) select record).ToList();
             }
         }
         public Int64 Erstellen()
         {
-            if (this.TextAttribut == null || this.TextAttribut == "") this.TextAttribut = "leer";
-            if (this.DatumAttribut == null) this.DatumAttribut = DateTime.MinValue;
+            if (this.Nachname == null || this.Nachname == "") this.Nachname = "leer";
+            if (this.Ausleihedatum == null) this.Ausleihedatum = DateTime.MinValue;
             using (var db = new Context())
             {
-                db.KlasseA.Add(this);
+                db.Bibliothek.Add(this);
                 db.SaveChanges();
-                return this.KlasseAId;
+                return this.BibliothekID;
             }
         }
         public Int64 Aktualisieren()
@@ -83,7 +85,7 @@ namespace M120Projekt.Data
             {
                 db.Entry(this).State = System.Data.Entity.EntityState.Modified;
                 db.SaveChanges();
-                return this.KlasseAId;
+                return this.BibliothekID;
             }
         }
         public void Loeschen()
@@ -96,7 +98,7 @@ namespace M120Projekt.Data
         }
         public override string ToString()
         {
-            return KlasseAId.ToString(); // Für bessere Coded UI Test Erkennung
+            return BibliothekID.ToString(); // Für bessere Coded UI Test Erkennung
         }
         #endregion
     }

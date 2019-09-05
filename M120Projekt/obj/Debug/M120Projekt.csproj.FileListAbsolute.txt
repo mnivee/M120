@@ -45,3 +45,16 @@ C:\Users\vmadmin\M120\M120Projekt\obj\Debug\M120Projekt_MarkupCompile.cache
 C:\Users\vmadmin\M120\M120Projekt\obj\Debug\M120Projekt_MarkupCompile.lref
 C:\Users\vmadmin\M120\M120Projekt\obj\Debug\M120Projekt.exe
 C:\Users\vmadmin\M120\M120Projekt\obj\Debug\M120Projekt.pdb
+C:\Users\vmadmin\M120\M120Projekt\bin\Debug\M120Projekt.exe.config
+C:\Users\vmadmin\M120\M120Projekt\bin\Debug\M120Projekt.exe
+C:\Users\vmadmin\M120\M120Projekt\bin\Debug\M120Projekt.pdb
+C:\Users\vmadmin\M120\M120Projekt\bin\Debug\EntityFramework.dll
+C:\Users\vmadmin\M120\M120Projekt\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\vmadmin\M120\M120Projekt\bin\Debug\EntityFramework.xml
+C:\Users\vmadmin\M120\M120Projekt\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\vmadmin\M120\M120Projekt\obj\Debug\MainWindow.baml
+C:\Users\vmadmin\M120\M120Projekt\obj\Debug\M120Projekt.g.resources
+C:\Users\vmadmin\M120\M120Projekt\obj\Debug\M120Projekt.Properties.Resources.resources
+C:\Users\vmadmin\M120\M120Projekt\obj\Debug\M120Projekt.csproj.GenerateResource.cache
+C:\Users\vmadmin\M120\M120Projekt\obj\Debug\M120Projekt.csproj.CoreCompileInputs.cache
+C:\Users\vmadmin\M120\M120Projekt\obj\Debug\M120Projekt.csproj.CopyComplete

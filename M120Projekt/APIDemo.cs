@@ -5,7 +5,7 @@ namespace M120Projekt
 {
     static class APIDemo
     {
-        #region KlasseA
+        #region Bibliothek
         // Create
         public static void DemoACreate()
         {
@@ -19,6 +19,7 @@ namespace M120Projekt
             klasseA1.Hausnummer = 84;
             klasseA1.Postleitzahl = 3004;
             klasseA1.Ort = "Bern";
+            klasseA1.Ausleihedatum = DateTime.Today;
             klasseA1.Buecherliste = "Maze Runner";
             
             Int64 klasseA1Id = klasseA1.Erstellen();
@@ -26,7 +27,7 @@ namespace M120Projekt
         }
         public static void DemoACreateKurz()
         {
-            Data.Bibliothek klasseA2 = new Data.Bibliothek { TextAttribut = "Artikel 2", BooleanAttribut = true, DatumAttribut = DateTime.Today };
+            Data.Bibliothek klasseA2 = new Data.Bibliothek { Vorname = "Nerea", Nachname="Künzi", Geschlecht = true, Strasse="Husmattstrasse", Hausnummer = 5, Postleitzahl = 3123 ,Ort="Belp",Ausleihedatum = DateTime.Today, Buecherliste ="Hunger Games"};
             Int64 klasseA2Id = klasseA2.Erstellen();
             Debug.Print("Artikel erstellt mit Id:" + klasseA2Id);
         }
@@ -38,7 +39,7 @@ namespace M120Projekt
             // Demo liest alle
             foreach (Data.Bibliothek klasseA in Data.Bibliothek.LesenAlle())
             {
-                Debug.Print("Artikel Id:" + klasseA.KlasseAId + " Name:" + klasseA.TextAttribut);
+                Debug.Print("Artikel Id:" + klasseA.BibliothekID + " Name:" + klasseA.Nachname);
             }
         }
         // Update
@@ -47,7 +48,7 @@ namespace M120Projekt
             Debug.Print("--- DemoAUpdate ---");
             // KlasseA ändert Attribute
             Data.Bibliothek klasseA1 = Data.Bibliothek.LesenID(1);
-            klasseA1.TextAttribut = "Artikel 1 nach Update";
+            klasseA1.Nachname = "Artikel 1 nach Update";
             klasseA1.Aktualisieren();
         }
         // Delete
