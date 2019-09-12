@@ -58,3 +58,6 @@ C:\Users\vmadmin\M120\M120Projekt\obj\Debug\M120Projekt.Properties.Resources.res
 C:\Users\vmadmin\M120\M120Projekt\obj\Debug\M120Projekt.csproj.GenerateResource.cache
 C:\Users\vmadmin\M120\M120Projekt\obj\Debug\M120Projekt.csproj.CoreCompileInputs.cache
 C:\Users\vmadmin\M120\M120Projekt\obj\Debug\M120Projekt.csproj.CopyComplete
+C:\Users\vmadmin\M120\M120Projekt\obj\Debug\NutzerErstellen.g.cs
+C:\Users\vmadmin\M120\M120Projekt\obj\Debug\NutzerErstellen.baml
+C:\Users\vmadmin\M120\M120Projekt\obj\Debug\GeneratedInternalTypeHelper.g.cs
