@@ -6,16 +6,16 @@
              xmlns:local="clr-namespace:M120Projekt"
              mc:Ignorable="d" 
              d:DesignHeight="450" d:DesignWidth="500">
-    <Grid Background="#FFBB4444" Margin="0,0,-116,0">
+    <Grid Background="#FFE8E8E8" Margin="0,0,-116,0">
         <Label Content="Nutzer erfassen" HorizontalAlignment="Left" Margin="101,49,0,0" VerticalAlignment="Top" Width="98" FontWeight="Bold"/>
-        <CheckBox Content="Herr" HorizontalAlignment="Left" Margin="101,80,0,0" VerticalAlignment="Top" Width="55"/>
-        <CheckBox Content="Frau" HorizontalAlignment="Left" Height="15" Margin="171,80,0,0" VerticalAlignment="Top" Width="55"/>
-        <Label Content="Vorname" HorizontalAlignment="Left" Margin="101,111,0,0" VerticalAlignment="Top" Width="98"/>
-        <Label Content="Nachname" HorizontalAlignment="Left" Margin="101,0,0,253" VerticalAlignment="Bottom" Width="98"/>
-        <Label Content="Strasse" HorizontalAlignment="Left" Margin="101,0,0,227" VerticalAlignment="Bottom" Width="98"/>
-        <Label Content="Hausnummer" HorizontalAlignment="Left" Margin="101,0,0,203" VerticalAlignment="Bottom" Width="98"/>
-        <Label Content="Postleitzahl" HorizontalAlignment="Left" Margin="101,0,0,177" VerticalAlignment="Bottom" Width="98"/>
-        <Label Content="Ort" HorizontalAlignment="Left" Margin="101,0,0,144" VerticalAlignment="Bottom" Width="98"/>
+        <RadioButton Content="Herr" HorizontalAlignment="Left" Margin="101,80,0,0" VerticalAlignment="Top" Width="55"/>
+        <RadioButton Content="Frau" HorizontalAlignment="Left" Margin="171,80,0,0" VerticalAlignment="Top" Width="55"/>
+        <Label Content="Vorname" HorizontalAlignment="Left" Margin="101,108,0,0" VerticalAlignment="Top" Width="98"/>
+        <Label Content="Nachname" HorizontalAlignment="Left" Margin="101,134,0,0" VerticalAlignment="Top" Width="98"/>
+        <Label Content="Strasse" HorizontalAlignment="Left" Margin="101,160,0,0" VerticalAlignment="Top" Width="98"/>
+        <Label Content="Hausnummer" HorizontalAlignment="Left" Margin="101,191,0,0" VerticalAlignment="Top" Width="98"/>
+        <Label Content="Postleitzahl" HorizontalAlignment="Left" Margin="101,216,0,0" VerticalAlignment="Top" Width="98"/>
+        <Label Content="Ort" HorizontalAlignment="Left" Margin="101,242,0,0" VerticalAlignment="Top" Width="98"/>
         <TextBox HorizontalAlignment="Left" Height="23" Margin="199,111,0,0" TextWrapping="Wrap" Text="Niveditha" VerticalAlignment="Top" Width="91"/>
         <TextBox HorizontalAlignment="Left" Height="23" Margin="199,137,0,0" TextWrapping="Wrap" Text="Muneeswaran" VerticalAlignment="Top" Width="91"/>
         <TextBox HorizontalAlignment="Left" Height="23" Margin="199,164,0,0" TextWrapping="Wrap" Text="Tiefenaustrasse" VerticalAlignment="Top" Width="91"/>
@@ -23,10 +23,21 @@
         <TextBox HorizontalAlignment="Left" Height="23" Margin="199,220,0,0" TextWrapping="Wrap" Text="3004" VerticalAlignment="Top" Width="91"/>
         <TextBox HorizontalAlignment="Left" Height="23" Margin="199,246,0,0" TextWrapping="Wrap" Text="Bern" VerticalAlignment="Top" Width="91"/>
         <DatePicker HorizontalAlignment="Left" VerticalAlignment="Top" Margin="101,303,0,0"/>
-        <Label Content="Ausleihedatum" HorizontalAlignment="Left" Margin="101,0,0,79" VerticalAlignment="Bottom" Width="98"/>
+        <Label Content="Ausleihedatum" HorizontalAlignment="Left" Margin="101,276,0,0" VerticalAlignment="Top" Width="98"/>
         <Button Content="Speichern" HorizontalAlignment="Left" Margin="404,363,0,0" VerticalAlignment="Top" Width="83" Background="#FFBBBBBB" BorderBrush="Black" Height="30"/>
         <Button Content="Abbrechen" HorizontalAlignment="Left" Margin="505,363,0,0" VerticalAlignment="Top" Width="83" Background="#FFBBBBBB" BorderBrush="Black" Height="30"/>
-        <ComboBox HorizontalAlignment="Left" Margin="404,111,0,0" VerticalAlignment="Top" Width="120" Name="Bücherauswahl"/>
+        <Button Content="Löschen" HorizontalAlignment="Left" Margin="305,363,0,0" VerticalAlignment="Top" Width="83" Background="#FFBBBBBB" BorderBrush="Black" Height="30"/>
+        <ComboBox HorizontalAlignment="Left" Margin="404,106,0,0" VerticalAlignment="Top" Width="120" Name="Bücherauswahl">
+            <ComboBox.Background>
+                <LinearGradientBrush EndPoint="0,1" StartPoint="0,0">
+                    <GradientStop Color="#FFF0F0F0" Offset="0"/>
+                    <GradientStop Color="#FF403636" Offset="1"/>
+                </LinearGradientBrush>
+            </ComboBox.Background>
+        </ComboBox>
+        <Label Content="Bücherliste" HorizontalAlignment="Left" Margin="404,79,0,0" VerticalAlignment="Top" Width="98"/>
+
+
 
     </Grid>
 </UserControl>

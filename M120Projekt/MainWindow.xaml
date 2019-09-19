@@ -5,8 +5,8 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:M120Projekt"
         mc:Ignorable="d"
-        Title="Bibliothek" Height="460.283" Width="700.119" BorderBrush="#FF0A0909">
-    <Grid>
+        Title="Bibliothek" Height="722.283" Width="1091.619" BorderBrush="#FF0A0909">
+    <Grid Margin="0,0,2,0">
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="*"/>
             <ColumnDefinition Width="600"/>
@@ -26,7 +26,7 @@
             <Button/>
         </DockPanel>
         <StackPanel Grid.Column="1" Grid.Row="1">
-            <local:NutzerErstellen Height="400"/>
+            <local:NutzerErstellen Height="500"/>
         </StackPanel>
     </Grid>
 
