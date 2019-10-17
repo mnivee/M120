@@ -16,12 +16,12 @@
         <Label Content="Hausnummer" HorizontalAlignment="Left" Margin="101,191,0,0" VerticalAlignment="Top" Width="98"/>
         <Label Content="Postleitzahl" HorizontalAlignment="Left" Margin="101,216,0,0" VerticalAlignment="Top" Width="98"/>
         <Label Content="Ort" HorizontalAlignment="Left" Margin="101,242,0,0" VerticalAlignment="Top" Width="98"/>
-        <TextBox HorizontalAlignment="Left" Height="23" Margin="199,111,0,0" TextWrapping="Wrap" Text="Niveditha" VerticalAlignment="Top" Width="91"/>
-        <TextBox HorizontalAlignment="Left" Height="23" Margin="199,137,0,0" TextWrapping="Wrap" Text="Muneeswaran" VerticalAlignment="Top" Width="91"/>
-        <TextBox HorizontalAlignment="Left" Height="23" Margin="199,164,0,0" TextWrapping="Wrap" Text="Tiefenaustrasse" VerticalAlignment="Top" Width="91"/>
-        <TextBox HorizontalAlignment="Left" Height="23" Margin="199,194,0,0" TextWrapping="Wrap" Text="84a" VerticalAlignment="Top" Width="91"/>
-        <TextBox HorizontalAlignment="Left" Height="23" Margin="199,220,0,0" TextWrapping="Wrap" Text="3004" VerticalAlignment="Top" Width="91"/>
-        <TextBox HorizontalAlignment="Left" Height="23" Margin="199,246,0,0" TextWrapping="Wrap" Text="Bern" VerticalAlignment="Top" Width="91"/>
+        <TextBox HorizontalAlignment="Left" Height="23" Margin="199,111,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="91"/>
+        <TextBox HorizontalAlignment="Left" Height="23" Margin="199,137,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="91"/>
+        <TextBox HorizontalAlignment="Left" Height="23" Margin="199,164,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="91"/>
+        <TextBox HorizontalAlignment="Left" Height="23" Margin="199,194,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="91"/>
+        <TextBox HorizontalAlignment="Left" Height="23" Margin="199,220,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="91"/>
+        <TextBox HorizontalAlignment="Left" Height="23" Margin="199,246,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="91"/>
         <DatePicker HorizontalAlignment="Left" VerticalAlignment="Top" Margin="101,303,0,0"/>
         <Label Content="Ausleihedatum" HorizontalAlignment="Left" Margin="101,276,0,0" VerticalAlignment="Top" Width="98"/>
         <Button Content="Speichern" HorizontalAlignment="Left" Margin="404,363,0,0" VerticalAlignment="Top" Width="83" Background="#FFBBBBBB" BorderBrush="Black" Height="30"/>
