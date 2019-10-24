@@ -60,4 +60,11 @@ C:\Users\vmadmin\M120\M120Projekt\obj\Debug\M120Projekt.csproj.CoreCompileInputs
 C:\Users\vmadmin\M120\M120Projekt\obj\Debug\M120Projekt.csproj.CopyComplete
 C:\Users\vmadmin\M120\M120Projekt\obj\Debug\NutzerErstellen.g.cs
 C:\Users\vmadmin\M120\M120Projekt\obj\Debug\NutzerErstellen.baml
-C:\Users\vmadmin\M120\M120Projekt\obj\Debug\GeneratedInternalTypeHelper.g.cs
+C:\Users\vmadmin\M120\M120Projekt\obj\Debug\HomeButtons.g.cs
+C:\Users\vmadmin\M120\M120Projekt\obj\Debug\HomeButtons.baml
+C:\Users\vmadmin\M120\M120Projekt\obj\Debug\BuecherErfassen.g.cs
+C:\Users\vmadmin\M120\M120Projekt\obj\Debug\BuecherErfassen.baml
+C:\Users\vmadmin\M120\M120Projekt\obj\Debug\Einstellungen.g.cs
+C:\Users\vmadmin\M120\M120Projekt\obj\Debug\FaelligeAbgaben.g.cs
+C:\Users\vmadmin\M120\M120Projekt\obj\Debug\Einstellungen.baml
+C:\Users\vmadmin\M120\M120Projekt\obj\Debug\FaelligeAbgaben.baml

@@ -16,15 +16,13 @@ using System.Windows.Shapes;
 namespace M120Projekt
 {
     /// <summary>
-    /// Interaktionslogik für NutzerErstellen.xaml
+    /// Interaktionslogik für BuecherErfassen.xaml
     /// </summary>
-    public partial class NutzerErstellen : UserControl
+    public partial class BuecherErfassen : UserControl
     {
-        public NutzerErstellen(ScrollViewer placeholder)
+        public BuecherErfassen(ScrollViewer placeholder)
         {
             InitializeComponent();
         }
-
-        
     }
 }

@@ -16,15 +16,13 @@ using System.Windows.Shapes;
 namespace M120Projekt
 {
     /// <summary>
-    /// Interaktionslogik für NutzerErstellen.xaml
+    /// Interaktionslogik für Einstellungen.xaml
     /// </summary>
-    public partial class NutzerErstellen : UserControl
+    public partial class Einstellungen : UserControl
     {
-        public NutzerErstellen(ScrollViewer placeholder)
+        public Einstellungen(ScrollViewer placeholder)
         {
             InitializeComponent();
         }
-
-        
     }
 }

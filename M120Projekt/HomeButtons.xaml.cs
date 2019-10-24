@@ -16,15 +16,19 @@ using System.Windows.Shapes;
 namespace M120Projekt
 {
     /// <summary>
-    /// Interaktionslogik für NutzerErstellen.xaml
+    /// Interaktionslogik für HomeButtons.xaml
     /// </summary>
-    public partial class NutzerErstellen : UserControl
+    public partial class HomeButtons : UserControl
     {
-        public NutzerErstellen(ScrollViewer placeholder)
+        public HomeButtons(ScrollViewer placeholder)
         {
             InitializeComponent();
+        
         }
 
-        
+        private void NutzerErfassen(object sender, RoutedEventArgs e)
+        {
+            
+        }
     }
 }

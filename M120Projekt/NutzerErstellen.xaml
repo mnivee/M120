@@ -26,7 +26,6 @@
         <Label Content="Ausleihedatum" HorizontalAlignment="Left" Margin="101,276,0,0" VerticalAlignment="Top" Width="98"/>
         <Button Content="Speichern" HorizontalAlignment="Left" Margin="404,363,0,0" VerticalAlignment="Top" Width="83" Background="#FFBBBBBB" BorderBrush="Black" Height="30"/>
         <Button Content="Abbrechen" HorizontalAlignment="Left" Margin="505,363,0,0" VerticalAlignment="Top" Width="83" Background="#FFBBBBBB" BorderBrush="Black" Height="30"/>
-        <Button Content="Löschen" HorizontalAlignment="Left" Margin="305,363,0,0" VerticalAlignment="Top" Width="83" Background="#FFBBBBBB" BorderBrush="Black" Height="30"/>
         <ComboBox HorizontalAlignment="Left" Margin="404,106,0,0" VerticalAlignment="Top" Width="120" Name="Bücherauswahl">
             <ComboBox.Background>
                 <LinearGradientBrush EndPoint="0,1" StartPoint="0,0">

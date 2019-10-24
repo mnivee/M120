@@ -18,19 +18,15 @@
         </Grid.RowDefinitions>
         <DockPanel Grid.ColumnSpan="3">
             <Menu DockPanel.Dock="Top" Height="30">
-                <MenuItem Header="Homeseite"></MenuItem>
-                <MenuItem Header="Bücher erfassen"></MenuItem>
-                <MenuItem Header="Fällige Abgaben"></MenuItem>
-                <MenuItem Header="Einstellungen"></MenuItem>
+                <MenuItem Header="Homeseite" Click="BibliothekHomeseite_Loaded"></MenuItem>
+                <MenuItem Header="Nutzer erfassen" Click="NavNutzerErfasssen"></MenuItem>
+                <MenuItem Header="Bücher erfassen" Click="NavBuecherErfassen"></MenuItem>
+                <MenuItem Header="Fällige Abgaben" Click="NavFaelligeAbgaben"></MenuItem>
+                <MenuItem Header="Einstellungen" Click="NavEinstellungen"></MenuItem>
             </Menu>
-            <Button/>
         </DockPanel>
-        <StackPanel Grid.Column="1" Grid.Row="1">
-            <Label x:Name="Label"
-         Content="Willkomen zur Bibliothek Korhaus" HorizontalAlignment="Center" FontSize="25"/>
-            <Button Content="Neu"  Margin="10, 12, 15, 10" Height="40"></Button>
-            <local:NutzerErstellen Height="500"/>
+        <StackPanel Grid.Column="1" Grid.Row="2">
+           <ScrollViewer x:Name="placeholder" Height="500"></ScrollViewer>
         </StackPanel>
     </Grid>
-
 </Window>
