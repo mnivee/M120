@@ -20,6 +20,7 @@ namespace M120Projekt
 
             HomeButtons homeSeite = new HomeButtons(placeholder);
             placeholder.Content = homeSeite;
+            placeholder.VerticalScrollBarVisibility = System.Windows.Controls.ScrollBarVisibility.Hidden;
 
         }
 
@@ -32,7 +33,7 @@ namespace M120Projekt
 
         private void NavNutzerErfasssen(object sender, RoutedEventArgs e)
         {
-            NutzerErstellen formularEintrag = new NutzerErstellen(placeholder);
+            NutzerErstellenLeer formularEintrag = new NutzerErstellenLeer(placeholder);
             placeholder.Content = formularEintrag;
         }
 
@@ -55,5 +56,6 @@ namespace M120Projekt
             placeholder.Content = einstelllungen;
 
         }
+
     }
 }

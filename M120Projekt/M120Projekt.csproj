@@ -109,11 +109,18 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="NutzerErstellenLeer.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="NutzerErstellen.xaml.cs">
       <DependentUpon>NutzerErstellen.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="NutzerErstellenLeer.xaml.cs">
+      <DependentUpon>NutzerErstellenLeer.xaml</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs">
       <SubType>Code</SubType>

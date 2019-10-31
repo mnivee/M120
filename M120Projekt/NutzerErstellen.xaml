@@ -24,8 +24,8 @@
         <TextBox HorizontalAlignment="Left" Height="23" Margin="199,246,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="91"/>
         <DatePicker HorizontalAlignment="Left" VerticalAlignment="Top" Margin="101,303,0,0"/>
         <Label Content="Ausleihedatum" HorizontalAlignment="Left" Margin="101,276,0,0" VerticalAlignment="Top" Width="98"/>
-        <Button Content="Speichern" HorizontalAlignment="Left" Margin="404,363,0,0" VerticalAlignment="Top" Width="83" Background="#FFBBBBBB" BorderBrush="Black" Height="30"/>
-        <Button Content="Abbrechen" HorizontalAlignment="Left" Margin="505,363,0,0" VerticalAlignment="Top" Width="83" Background="#FFBBBBBB" BorderBrush="Black" Height="30"/>
+        <Button Content="Speichern" HorizontalAlignment="Left" Margin="404,363,0,0" VerticalAlignment="Top" Width="83" Background="#FFBBBBBB" BorderBrush="Black" Height="30" Click="Speichern_Click"/>
+        <Button Content="Abbrechen" HorizontalAlignment="Left" Margin="505,363,0,0" VerticalAlignment="Top" Width="83" Background="#FFBBBBBB" BorderBrush="Black" Height="30" Click="Abbrechen_Click"/>
         <ComboBox HorizontalAlignment="Left" Margin="404,106,0,0" VerticalAlignment="Top" Width="120" Name="Bücherauswahl">
             <ComboBox.Background>
                 <LinearGradientBrush EndPoint="0,1" StartPoint="0,0">
@@ -33,10 +33,12 @@
                     <GradientStop Color="#FF403636" Offset="1"/>
                 </LinearGradientBrush>
             </ComboBox.Background>
+            <ComboBoxItem Content="Maze Runner"></ComboBoxItem>
+            <ComboBoxItem Content="Das Institut"></ComboBoxItem>
+            <ComboBoxItem Content="Harry Potter"></ComboBoxItem>
+            <ComboBoxItem Content="Zero"></ComboBoxItem>
+            <ComboBoxItem Content="The Wave"></ComboBoxItem>
         </ComboBox>
         <Label Content="Bücherliste" HorizontalAlignment="Left" Margin="404,79,0,0" VerticalAlignment="Top" Width="98"/>
-
-
-
     </Grid>
 </UserControl>

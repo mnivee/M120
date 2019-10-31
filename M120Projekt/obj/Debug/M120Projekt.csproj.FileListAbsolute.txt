@@ -68,3 +68,5 @@ C:\Users\vmadmin\M120\M120Projekt\obj\Debug\Einstellungen.g.cs
 C:\Users\vmadmin\M120\M120Projekt\obj\Debug\FaelligeAbgaben.g.cs
 C:\Users\vmadmin\M120\M120Projekt\obj\Debug\Einstellungen.baml
 C:\Users\vmadmin\M120\M120Projekt\obj\Debug\FaelligeAbgaben.baml
+C:\Users\vmadmin\M120\M120Projekt\obj\Debug\NutzerErstellenLeer.g.cs
+C:\Users\vmadmin\M120\M120Projekt\obj\Debug\NutzerErstellenLeer.baml

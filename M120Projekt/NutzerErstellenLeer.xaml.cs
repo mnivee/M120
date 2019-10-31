@@ -16,24 +16,23 @@ using System.Windows.Shapes;
 namespace M120Projekt
 {
     /// <summary>
-    /// Interaktionslogik für HomeButtons.xaml
+    /// Interaktionslogik für NutzerErstellenLeer.xaml
     /// </summary>
-    public partial class HomeButtons : UserControl
+    public partial class NutzerErstellenLeer : UserControl
     {
         private ScrollViewer placeholder;
-        public HomeButtons(ScrollViewer placeholder)
+        public NutzerErstellenLeer(ScrollViewer placeholder)
         {
+
             InitializeComponent();
             this.placeholder = placeholder;
-
         }
 
         private void NutzerErfassen(object sender, RoutedEventArgs e)
         {
-            NutzerErstellenLeer leereEintrag = new NutzerErstellenLeer(placeholder);
-            placeholder.Content = leereEintrag;
-        }
-        
+            NutzerErstellen formulareintrag = new NutzerErstellen(placeholder);
+            placeholder.Content = formulareintrag;
 
+        }
     }
 }
