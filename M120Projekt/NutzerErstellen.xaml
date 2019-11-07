@@ -16,17 +16,17 @@
         <Label Content="Hausnummer" HorizontalAlignment="Left" Margin="101,191,0,0" VerticalAlignment="Top" Width="98"/>
         <Label Content="Postleitzahl" HorizontalAlignment="Left" Margin="101,216,0,0" VerticalAlignment="Top" Width="98"/>
         <Label Content="Ort" HorizontalAlignment="Left" Margin="101,242,0,0" VerticalAlignment="Top" Width="98"/>
-        <TextBox HorizontalAlignment="Left" Height="23" Margin="199,111,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="91"/>
-        <TextBox HorizontalAlignment="Left" Height="23" Margin="199,137,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="91"/>
-        <TextBox HorizontalAlignment="Left" Height="23" Margin="199,164,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="91"/>
-        <TextBox HorizontalAlignment="Left" Height="23" Margin="199,194,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="91"/>
-        <TextBox HorizontalAlignment="Left" Height="23" Margin="199,220,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="91"/>
-        <TextBox HorizontalAlignment="Left" Height="23" Margin="199,246,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="91"/>
-        <DatePicker HorizontalAlignment="Left" VerticalAlignment="Top" Margin="101,303,0,0"/>
+        <TextBox Name="vornameBox" HorizontalAlignment="Left" Height="23" Margin="199,111,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="91" TextChanged="textChangedEventHandler"/>
+        <TextBox Name="nachnameBox" HorizontalAlignment="Left" Height="23" Margin="199,137,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="91" TextChanged="textChangedEventHandler"/>
+        <TextBox Name="strasseBox" HorizontalAlignment="Left" Height="23" Margin="199,164,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="91" TextChanged="textChangedEventHandler"/>
+        <TextBox Name="hausnummerBox" HorizontalAlignment="Left" Height="23" Margin="199,194,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="91" TextChanged="textChangedEventHandler"/>
+        <TextBox Name="postleitzahlBox" HorizontalAlignment="Left" Height="23" Margin="199,220,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="91" TextChanged="textChangedEventHandler"/>
+        <TextBox Name="ortBox" HorizontalAlignment="Left" Height="23" Margin="199,246,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="91" TextChanged="textChangedEventHandler"/>
+        <DatePicker Name ="ausleihedatumBox" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="101,303,0,0" SelectedDateChanged="DatePicker_SelectedDateChanged"/>
         <Label Content="Ausleihedatum" HorizontalAlignment="Left" Margin="101,276,0,0" VerticalAlignment="Top" Width="98"/>
         <Button Content="Speichern" HorizontalAlignment="Left" Margin="404,363,0,0" VerticalAlignment="Top" Width="83" Background="#FFBBBBBB" BorderBrush="Black" Height="30" Click="Speichern_Click"/>
         <Button Content="Abbrechen" HorizontalAlignment="Left" Margin="505,363,0,0" VerticalAlignment="Top" Width="83" Background="#FFBBBBBB" BorderBrush="Black" Height="30" Click="Abbrechen_Click"/>
-        <ComboBox HorizontalAlignment="Left" Margin="404,106,0,0" VerticalAlignment="Top" Width="120" Name="Bücherauswahl">
+        <ComboBox HorizontalAlignment="Left" Margin="404,106,0,0" VerticalAlignment="Top" Width="120" Name="Bücherauswahl" SelectionChanged="ComboBox_SelectionChanged">
             <ComboBox.Background>
                 <LinearGradientBrush EndPoint="0,1" StartPoint="0,0">
                     <GradientStop Color="#FFF0F0F0" Offset="0"/>

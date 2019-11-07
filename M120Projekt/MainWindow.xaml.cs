@@ -57,5 +57,11 @@ namespace M120Projekt
 
         }
 
+        private void ErfassteNutzerForm(object sender, RoutedEventArgs e)
+        {
+            NutzerErfassenDatenGrid datenAnsicht = new NutzerErfassenDatenGrid(placeholder);
+            placeholder.Content = datenAnsicht;
+        }
+
     }
 }
