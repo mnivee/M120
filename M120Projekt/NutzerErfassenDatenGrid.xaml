@@ -7,9 +7,10 @@
              mc:Ignorable="d" 
              d:DesignHeight="450" d:DesignWidth="800">
     <Grid>
-        <DataGrid Name="dgNutzer" ItemsSource="{Binding }" AutoGenerateColumns="False" MouseDoubleClick="DgNutzer_MouseDoubleClick" SelectionChanged="DgNutzer_SelectionChanged">
+        <DataGrid Name="dgNutzer" ItemsSource="{Binding nutzer}" AutoGenerateColumns="False" MouseDoubleClick="DgNutzer_MouseDoubleClick" SelectionChanged="DgNutzer_SelectionChanged">
             <DataGrid.Columns>
                 <DataGridTextColumn Header="Vorname" Binding="{Binding Vorname}" Width="60" IsReadOnly="True"/>
+                <DataGridTextColumn Header="Nachname" Binding="{Binding Nachname}" Width="60" IsReadOnly="True"/>
                 <DataGridTextColumn Header="Buchtitel" Binding="{Binding Buecherliste}" Width="60" IsReadOnly="True"/>
                 <DataGridTextColumn Header="Ausleihedatum" Binding="{Binding Ausleihedatum}" Width="100" IsReadOnly="True"/>
             </DataGrid.Columns>
