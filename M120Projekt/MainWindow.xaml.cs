@@ -17,11 +17,14 @@ namespace M120Projekt
             //APIDemo.DemoAUpdate();
             //APIDemo.DemoARead();
             //APIDemo.DemoADelete();
+            startHome();
+        }
 
+        private void startHome()
+        {
             HomeButtons homeSeite = new HomeButtons(placeholder);
             placeholder.Content = homeSeite;
             placeholder.VerticalScrollBarVisibility = System.Windows.Controls.ScrollBarVisibility.Hidden;
-
         }
 
         private void BibliothekHomeseite_Loaded(object sender, RoutedEventArgs e)
@@ -56,12 +59,5 @@ namespace M120Projekt
             placeholder.Content = einstelllungen;
 
         }
-
-        private void ErfassteNutzerForm(object sender, RoutedEventArgs e)
-        {
-            NutzerErfassenDatenGrid datenAnsicht = new NutzerErfassenDatenGrid(placeholder);
-            placeholder.Content = datenAnsicht;
-        }
-
     }
 }

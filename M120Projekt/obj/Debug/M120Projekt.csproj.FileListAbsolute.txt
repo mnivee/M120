@@ -70,5 +70,3 @@ C:\Users\vmadmin\M120\M120Projekt\obj\Debug\Einstellungen.baml
 C:\Users\vmadmin\M120\M120Projekt\obj\Debug\FaelligeAbgaben.baml
 C:\Users\vmadmin\M120\M120Projekt\obj\Debug\NutzerErstellenLeer.g.cs
 C:\Users\vmadmin\M120\M120Projekt\obj\Debug\NutzerErstellenLeer.baml
-C:\Users\vmadmin\M120\M120Projekt\obj\Debug\NutzerErfassenDatenGrid.g.cs
-C:\Users\vmadmin\M120\M120Projekt\obj\Debug\NutzerErfassenDatenGrid.baml

@@ -7,9 +7,20 @@
              mc:Ignorable="d" 
              d:DesignHeight="450" d:DesignWidth="800">
     <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="50"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="50"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="100"/>
+            <RowDefinition Height="350"/>
+            <RowDefinition Height="100"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
         <StackPanel Grid.Column="1" Grid.Row="1">
-            <Label x:Name="Label"
-         Content="Bücher erfassen" HorizontalAlignment="Center" FontSize="25"/>
+            <Label x:Name="Label" Content="Bücher erfassen" HorizontalAlignment="Center" FontSize="25"/>
         </StackPanel>
     </Grid>
 </UserControl>
+

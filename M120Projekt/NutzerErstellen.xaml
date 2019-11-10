@@ -6,39 +6,82 @@
              xmlns:local="clr-namespace:M120Projekt"
              mc:Ignorable="d" 
              d:DesignHeight="450" d:DesignWidth="500">
+
     <Grid Background="#FFE8E8E8" Margin="0,0,-116,0">
+        <!--die Labels-->
         <Label Content="Nutzer erfassen" HorizontalAlignment="Left" Margin="101,49,0,0" VerticalAlignment="Top" Width="98" FontWeight="Bold"/>
-        <RadioButton Content="Herr" HorizontalAlignment="Left" Margin="101,80,0,0" VerticalAlignment="Top" Width="55"/>
-        <RadioButton Content="Frau" HorizontalAlignment="Left" Margin="171,80,0,0" VerticalAlignment="Top" Width="55"/>
+        <CheckBox Name ="checkboxHerr" Content="Herr" HorizontalAlignment="Left" Margin="101,80,0,0" VerticalAlignment="Top" Width="55" Click="CheckBox_Click"/>
+        <CheckBox Name="checkboxFrau" Content="Frau" HorizontalAlignment="Left" Margin="171,80,0,0" VerticalAlignment="Top" Width="55"/>
         <Label Content="Vorname" HorizontalAlignment="Left" Margin="101,108,0,0" VerticalAlignment="Top" Width="98"/>
         <Label Content="Nachname" HorizontalAlignment="Left" Margin="101,134,0,0" VerticalAlignment="Top" Width="98"/>
         <Label Content="Strasse" HorizontalAlignment="Left" Margin="101,160,0,0" VerticalAlignment="Top" Width="98"/>
         <Label Content="Hausnummer" HorizontalAlignment="Left" Margin="101,191,0,0" VerticalAlignment="Top" Width="98"/>
         <Label Content="Postleitzahl" HorizontalAlignment="Left" Margin="101,216,0,0" VerticalAlignment="Top" Width="98"/>
         <Label Content="Ort" HorizontalAlignment="Left" Margin="101,242,0,0" VerticalAlignment="Top" Width="98"/>
-        <TextBox Name="vornameBox" HorizontalAlignment="Left" Height="23" Margin="199,111,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="91" TextChanged="textChangedEventHandler"/>
-        <TextBox Name="nachnameBox" HorizontalAlignment="Left" Height="23" Margin="199,137,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="91" TextChanged="textChangedEventHandler"/>
-        <TextBox Name="strasseBox" HorizontalAlignment="Left" Height="23" Margin="199,164,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="91" TextChanged="textChangedEventHandler"/>
-        <TextBox Name="hausnummerBox" HorizontalAlignment="Left" Height="23" Margin="199,194,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="91" TextChanged="textChangedEventHandler"/>
-        <TextBox Name="postleitzahlBox" HorizontalAlignment="Left" Height="23" Margin="199,220,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="91" TextChanged="textChangedEventHandler"/>
-        <TextBox Name="ortBox" HorizontalAlignment="Left" Height="23" Margin="199,246,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="91" TextChanged="textChangedEventHandler"/>
+        <!--Die Eingabefelder -->
+        <TextBox Name="vornameBox" HorizontalAlignment="Left" Height="23" Margin="199,111,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="91" TextChanged="textChangedEventHandler">
+            <TextBox.Effect>
+                <DropShadowEffect Opacity="0.4"/>
+            </TextBox.Effect>
+        </TextBox>
+        <TextBox Name="nachnameBox" HorizontalAlignment="Left" Height="23" Margin="199,137,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="91" TextChanged="textChangedEventHandler">
+            <TextBox.Effect>
+                <DropShadowEffect Opacity="0.4"/>
+            </TextBox.Effect>
+        </TextBox>
+        <TextBox Name="strasseBox" HorizontalAlignment="Left" Height="23" Margin="199,164,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="91" TextChanged="textChangedEventHandler">
+            <TextBox.Effect>
+                <DropShadowEffect Opacity="0.4"/>
+            </TextBox.Effect>
+        </TextBox>
+        <TextBox Name="hausnummerBox" HorizontalAlignment="Left" Height="23" Margin="199,194,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="91" TextChanged="textChangedEventHandler">
+            <TextBox.Effect>
+                <DropShadowEffect Opacity="0.4"/>
+            </TextBox.Effect>
+        </TextBox>
+        <TextBox Name="postleitzahlBox" HorizontalAlignment="Left" Height="23" Margin="199,220,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="91" TextChanged="textChangedEventHandler">
+            <TextBox.Effect>
+                <DropShadowEffect Opacity="0.4"/>
+            </TextBox.Effect>
+        </TextBox>
+        <TextBox Name="ortBox" HorizontalAlignment="Left" Height="23" Margin="199,246,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="91" TextChanged="textChangedEventHandler">
+            <TextBox.Effect>
+                <DropShadowEffect Opacity="0.4"/>
+            </TextBox.Effect>
+        </TextBox>
         <DatePicker Name ="ausleihedatumBox" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="101,303,0,0" SelectedDateChanged="DatePicker_SelectedDateChanged"/>
         <Label Content="Ausleihedatum" HorizontalAlignment="Left" Margin="101,276,0,0" VerticalAlignment="Top" Width="98"/>
-        <Button Content="Speichern" HorizontalAlignment="Left" Margin="404,363,0,0" VerticalAlignment="Top" Width="83" Background="#FFBBBBBB" BorderBrush="Black" Height="30" Click="Speichern_Click"/>
-        <Button Content="Abbrechen" HorizontalAlignment="Left" Margin="505,363,0,0" VerticalAlignment="Top" Width="83" Background="#FFBBBBBB" BorderBrush="Black" Height="30" Click="Abbrechen_Click"/>
-        <ComboBox HorizontalAlignment="Left" Margin="404,106,0,0" VerticalAlignment="Top" Width="120" Name="Bücherauswahl" SelectionChanged="ComboBox_SelectionChanged">
-            <ComboBox.Background>
-                <LinearGradientBrush EndPoint="0,1" StartPoint="0,0">
-                    <GradientStop Color="#FFF0F0F0" Offset="0"/>
-                    <GradientStop Color="#FF403636" Offset="1"/>
-                </LinearGradientBrush>
-            </ComboBox.Background>
-            <ComboBoxItem Content="Maze Runner"></ComboBoxItem>
-            <ComboBoxItem Content="Das Institut"></ComboBoxItem>
-            <ComboBoxItem Content="Harry Potter"></ComboBoxItem>
-            <ComboBoxItem Content="Zero"></ComboBoxItem>
-            <ComboBoxItem Content="The Wave"></ComboBoxItem>
-        </ComboBox>
+        <!--Buttons-->
+        <Button Name="Save" Content="Speichern" HorizontalAlignment="Left" Margin="404,363,0,0" VerticalAlignment="Top" Width="83" Background="#FFBBBBBB" BorderBrush="Black" Height="30" Click="Speichern_Click">
+            <Button.Effect>
+                <DropShadowEffect Opacity="0.4"/>
+            </Button.Effect>
+        </Button>
+        <Button Name="Cancel" Content="Abbrechen" HorizontalAlignment="Left" Margin="505,363,0,0" VerticalAlignment="Top" Width="83" Background="#FFBBBBBB" BorderBrush="Black" Height="30" Click="Abbrechen_Click">
+            <Button.Effect>
+                <DropShadowEffect Opacity="0.4"/>
+            </Button.Effect>
+        </Button>
+        <Button Name="Delete" Content="Löschen" HorizontalAlignment="Left" Margin="303,363,0,0" VerticalAlignment="Top" Width="83" Background="#FFBBBBBB" BorderBrush="Black" Height="30" Click="Löschen_Click">
+            <Button.Effect>
+                <DropShadowEffect Opacity="0.4"/>
+            </Button.Effect>
+        </Button>
+        <Border Name="buecherlisteBorder" BorderBrush="Red">
+            <ComboBox HorizontalAlignment="Left" Margin="404,106,0,0" VerticalAlignment="Top" Width="120" Name="Bücherauswahl" SelectionChanged="ComboBox_SelectionChanged">
+                <ComboBox.Background>
+                    <LinearGradientBrush EndPoint="0,1" StartPoint="0,0">
+                        <GradientStop Color="#FFF0F0F0" Offset="0"/>
+                        <GradientStop Color="#FF403636" Offset="1"/>
+                    </LinearGradientBrush>
+                </ComboBox.Background>
+                <ComboBoxItem Content="Maze Runner"></ComboBoxItem>
+                <ComboBoxItem Content="Das Institut"></ComboBoxItem>
+                <ComboBoxItem Content="Harry Potter"></ComboBoxItem>
+                <ComboBoxItem Content="Zero"></ComboBoxItem>
+                <ComboBoxItem Content="The Wave"></ComboBoxItem>
+            </ComboBox>
+        </Border>
         <Label Content="Bücherliste" HorizontalAlignment="Left" Margin="404,79,0,0" VerticalAlignment="Top" Width="98"/>
     </Grid>
 </UserControl>
