@@ -95,6 +95,7 @@ namespace M120Projekt
                 nutzer.Ort = ort;
                 nutzer.Ausleihedatum = ausleihedatum;
                 nutzer.Buecherliste = buecherliste;
+                nutzer.Erstellen();
             }
             else
             {
@@ -143,20 +144,15 @@ namespace M120Projekt
             // validation correct save in database | else: error message
             if(ValidateVorname(vornameInput) && ValidateNachname (nachnameInput) && ValidateStrasse(strasseInput) && ValidateHausnummer(hausnummerInput) && ValidatePostleitzahl(postleitzahlInput) && ValidateOrt(ortInput) && ValidateDatum(dateInput) && ValidateBuecherauswahl(buecherlisteInput))
             {
+                long hausnummer = Convert.ToInt64(hausnummerInput);
+                long postleitzahl = Convert.ToInt64(postleitzahlInput);
                 // saves into db
-               // saveDataIntoDatabase(checkboxInput,vornameInput, nachnameInput, strasseInput, hausnummerInput, postleitzahlInput, ortInput, dateInput, buecherlisteValue);
-                //NutzerErstellenLeer nutzer = new NutzerErstellenLeer(placeholder);
-                //placeholder.Content = nutzer;
+                this.saveDataIntoDatabase(checkboxInput,vornameInput, nachnameInput, strasseInput, hausnummer, postleitzahl, ortInput, dateInput, buecherlisteValue);
+               NutzerErstellenLeer nutzer = new NutzerErstellenLeer(placeholder);
+               placeholder.Content = nutzer;
 
                 MessageBox.Show("Der Nutzer wurde gespeichert.");
             }
-        }
-
-        private void saveDataIntoDatabase(bool checkboxInput, string vornameInput, string nachnameInput, string strasseInput, string hausnummerInput, string postleitzahlInput, string ortInput, DateTime dateInput, string buecherlisteValue)
-        {
-            throw new NotImplementedException();
-            NutzerErstellenLeer nutzer = new NutzerErstellenLeer(placeholder);
-            placeholder.Content = nutzer;
         }
 
         private void Abbrechen_Click(object sender, RoutedEventArgs e)
